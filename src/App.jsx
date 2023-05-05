@@ -4,11 +4,11 @@ import Home from "./Layout/Home"
 import AboutMe from "./Layout/AboutMe"
 import Projects from "./Layout/Projects"
 import ContactMe from "./Layout/ContactMe"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex flex-col h-screen justify-between">
         <Header/>
           <Routes>
@@ -19,7 +19,7 @@ function App() {
           </Routes>
         <Footer/>
       </div>
-    </BrowserRouter>
+    </HashRouter>
     
   )
 }
